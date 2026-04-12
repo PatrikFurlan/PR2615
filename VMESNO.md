@@ -62,3 +62,14 @@ Iz nomograma lahko razberemo, da največ točk vrsta ceste, kjer so razlike med 
 Nekoliko presenetljivo je morda dejstvo, da je verjetnost glede na vremenske okoliščine najvišja pri vetrovnem vremenu.
 
 <img width="1577" height="385" alt="Pasted image 20260411181722" src="https://github.com/user-attachments/assets/0d4de624-1037-4e57-a0e1-60a0e2d6010e" />
+
+
+#### 3.6. Razporeditev koordinat nesreč na zemljevidu
+
+Za prikaz prostorske razporeditve prometnih nesreč smo uporabili geografske koordinate nesreč in jih prikazali na zemljevidu Slovenije. Ker se ista nesreča v podatkih lahko pojavi večkrat zaradi več udeležencev, smo za vizualizacijo upoštevali le en zapis za vsako nesrečo.
+
+Koordinate smo pretvorili v zemljepisno širino in dolžino ter pripravili toplotni zemljevid (heatmap), ki omogoča bolj pregleden prikaz območij z večjo koncentracijo nesreč.
+
+![Heatmap prometnih nesreč v Sloveniji](images/heatmap.png)
+
+Toplotni zemljevid pokaže, da prometne nesreče niso enakomerno razporejene po prostoru. Večja koncentracija nesreč je opazna v okolici večjih mest in vzdolž pomembnejših prometnih povezav, kar je pričakovano zaradi večje gostote prometa in večje obremenjenosti cestne infrastrukture.
