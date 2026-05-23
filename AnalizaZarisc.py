@@ -74,7 +74,7 @@ starost_range = st.sidebar.slider("Razpon starosti", 0, 100, (0, 100))
 ura_range = st.sidebar.slider("Ura nesreče (od-do)", 0, 23, (0, 23))
 
 st.sidebar.subheader("HDBSCAN Parametri")
-min_c_size = st.sidebar.slider("Minimalna velikost gruče", 2, 100, 15)
+min_c_size = st.sidebar.slider("Minimalna velikost gruče", 2, 200, 15)
 min_samples = st.sidebar.slider("Minimalno število sosedov (gostota)", 1, 20, 5)
 
 FIXED_OFFSET_X = 415
@@ -155,7 +155,7 @@ if len(df_filtered) >= 2:
         initial_view_state=view_state,
         map_style=None,
         tooltip={"text": "Vzrok: {VzrokNesrece}\nStarost: {Starost}\nUra: {UraPN}\nŠt. v gruči: {Cluster}"}
-    ), use_container_width=True)
+    ),  use_container_width=True, height=850)
 
 else:
     st.title(f"Analiza žarišč: {izbrano_ue}")
