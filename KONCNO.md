@@ -30,8 +30,12 @@ Prišli smo do večinoma pričakovanih rezultatov, kjer petek predstavlja najnev
 <img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/f0088ca3-6625-4d3e-89a4-3878f2d7ab52" />
 
 ![Delež prometnih nesreč glede na uro](slike/hourly_ratio.png)
-
 Graf prikazuje delež vseh prometnih nesreč po urah dneva. Namesto absolutnega števila nesreč smo za vsako uro izračunali razmerje med številom unikatnih nesreč v tej uri in skupnim številom vseh unikatnih nesreč. Najmanj nesreč je v nočnih in zgodnjih jutranjih urah, delež pa se poveča čez dan, predvsem v popoldanskem času, ko je promet gostejši.
+
+![Toplotna karta prometnih nesreč po dnevih in urah](slike/day_hour_heatmap.png)
+
+Toplotna karta prikazuje delež prometnih nesreč glede na kombinacijo dneva v tednu in ure. Za vsako kombinacijo dneva in ure smo izračunali razmerje med številom unikatnih nesreč v tem časovnem intervalu in številom vseh unikatnih nesreč v podatkovni zbirki. Tak prikaz omogoča lažje opazovanje vzorcev skozi teden. Višji deleži se pojavljajo predvsem med delovniki v dnevnih in popoldanskih urah, medtem ko so deleži ponoči in med vikendom nižji.
+
 
 #### 3.2. Verjetnost nastanka nesreče s poškodbo glede na vremenske okoliščine
 
