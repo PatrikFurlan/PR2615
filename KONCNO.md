@@ -19,10 +19,6 @@ Ključni koraki čiščenja podatkov:
 
 5. **Normalizacija:** Nekateri vnosi so bili nesmiselni in jih je zato bilo potrebno omejiti. Primer takih vnosov so naprimer izredno visoki vozniški staži (nad 85 let), stopnja alkoholiziranosti nad 3 mg/l (kar se smatra kot smrtna doza) ... Take vnose smo smiselno omejili in višje vnose izbrisali.
 
-Tukaj bi dodal še zanimiv izris, ki je nastal kot posledica testiranja podatkov o koordinatah nesreč. Pri testiranju atributov smo razmišljali, kako bi preverili resničnost podatkov o koordinatah nakar smo prišli do ideje uporabe scatter plot grafa v aplikaciji Orange. Dobljen graf jasno prikazuje obliko Slovenije.
-
-<img width="1614" height="969" alt="Pasted image 20260411165733" src="https://github.com/user-attachments/assets/553a53c8-6fe3-49ce-bc1e-b721c458cf64" />
-
 Po korakih obdelave podatkov smo dobili povsem prečiščeno in enotno podatkovno zbirko, ki smo jo za potrebe nadaljne analize shranili v svojo .csv datoteko. 
 
 ### 3. Analiza
@@ -80,3 +76,23 @@ Model deluje dobro ampak ni interaktiven in omejen na prikaz samo enega mesta. �
 Napotki za nastavljanje parametrov algortima HDBSCAN:
 - **Minimalna velikost gruče**: Parameter nastavimo na približno 1-2% vseh prikazanih nesreč
 - **Minimalno število sosedov**: Če je število prikazanih nesreč visoko lahko parameter nastavimo na največ polovico vrednosti parametra *Minimalna velikost gruče*, boljše pa če je manj.
+
+#### 3.6 So nesreče zunaj mest resnejše?
+
+Pri tej analizi želimo pokazati, da so nesreče, ki se dogajajo izven naselji v povprečju hujše (njihov izzid je huda telesna poškodba ali smrt). 
+
+<img width="790" height="590" alt="image" src="https://github.com/user-attachments/assets/d22236df-e383-4a2b-bd2f-bb8a3f7851c5" />
+
+Iz grafa je razvidno, da se hude nesreče izven naselja pojavijo 1.5-krat pogosteje kot v naseljih.
+Preveriti želimo, če je zgornji rezultat naključen ali dejansko statistično značilen, zato smo ga preverili z chi-square testom. Test je pokazal, da je verjetnost da so naši rezultati naključni tako majhna da je praktično nič, kar potrdi, da so nesreče izven naselji tipično hujše. Sklepamo, da temu pripomorajo višje hitrosti izven naselja in daljši odzivni času reševalnih služb.
+
+#### 3.7 So nesreče ponoči resnejše?
+
+Na podoben način želimo pokazati, da so nesreče, ki se zgodijo ponoči (23.00 - 4.59) hujše.
+
+<img width="1389" height="490" alt="image" src="https://github.com/user-attachments/assets/f22117aa-d478-413f-9e2a-d0eb52536706" />
+
+<img width="790" height="590" alt="image" src="https://github.com/user-attachments/assets/a0c1d3e7-942b-49f3-8449-96ecd4675e95" />
+
+Na prvem grafu lahko vidimo da najbolj izstopa polnoč (~6.3%). Na drugem grafu vidimo, da je procentualno ponoči nekoliko več takih nesreč, ampak ali je to samo naključje? Poskusimo ponovno s chi-square testom. Chi-square test pokaže p = 0,13, kar pomeni, da razlika ni statistično značilna. Zaključimo lahko, da imajo nesreče med 0.00 in 2.00 v povprečju višji delež hudih posledic, vendar binarna primerjava dan/noč ne pokaže statistično značilne razlike.
+
