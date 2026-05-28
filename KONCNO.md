@@ -22,14 +22,19 @@ Ključni koraki čiščenja podatkov:
 Po korakih obdelave podatkov smo dobili povsem prečiščeno in enotno podatkovno zbirko, ki smo jo za potrebe nadaljne analize shranili v svojo .csv datoteko. 
 
 ### 3. Analiza
+
+Tukaj so povzete samo glavne ugotovitve analiz in pomembnejše slike. Dodatni grafi, opisi in izvorna koda je opisana v sklopu Jupyter notebook zvezka.
+<br>
+- Jupyter notebook: https://github.com/PatrikFurlan/PR2615/blob/main/notebook.ipynb
+- Interaktiven streamlit model: https://pr2615.streamlit.app/
+
 #### 3.1. Porazdelitev glede na dan v tednu in uro
 
 Pogledali smo si porazdelitev po dnevih v tednu in po urah, kjer smo za risanje grafa uporabili deleže prometnih nesreč, namesto dejanskih pojavov nesreč. Tako smo pri nesrečah po dnevih v tednu stolpce izračunali kot *(Število nesreč na posamezen dan / vse nesreče)*. Podobno smo računali tudi pri analizi po urah.
-Prišli smo do večinoma pričakovanih rezultatov, kjer petek predstavlja najnevarnejši dan. Na splošno lahko vidimo, da je delavnik nevarnejši od vikenda, kjer so verjetnosti veliko nižje.
+Prišli smo do večinoma pričakovanih rezultatov. Iz analize deležev nesreč glede na dan lahko razberemo, da se največ nesreč v podatkih pojavi ob petkih. Na splošno je med delavnikom več nesreč kot med vikendom, kjer so deleži veliko nižji. Kot pričakovano se največji delež nesreč zgodi popoldan med 15.00 in 16.00. 
+Pridobljena grafa analize po dnevih in po urah smno združili v enoten vpogled v podatke z toplotno karto.
 
-<img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/f0088ca3-6625-4d3e-89a4-3878f2d7ab52" />
-
-# dodaj se po urah
+<img width="1621" height="690" alt="image" src="https://github.com/user-attachments/assets/60eec8c6-051c-4998-b0ba-c15997cb0d8a" />
 
 #### 3.2. Verjetnost nastanka nesreče s poškodbo glede na vremenske okoliščine
 
