@@ -2,7 +2,14 @@
 
 ### 1. Opis problema
 
-Cilj projektne naloge je analiziranje prometne varnosti na slovenskih cestah s pomočjo podatkov zadnjega desetletja (2014 - 2024). Z analizo raziskujemo pogoste vzroke za nastanek prometnih nesreč in možne korelacije, ki pripomorejo k verjetnosti za nastanek. Do sedaj smo raziskali časovne vplive, kot so dan v tednu, ura v dnevu, dan v letu, korelacije glede na vremenske okoliščine in trend vožnje pod vplivom alkohola.
+Cilj projektne naloge je analiziranje prometne varnosti na slovenskih cestah s pomočjo podatkov zadnjega desetletja (2014 - 2024). Z analizo raziskujemo pogoste vzroke za nastanek prometnih nesreč in možne korelacije, ki pripomorejo k verjetnosti za nastanek. V sklopu analize smo odgovarjali na naslednja vprašanja:
+- Na katere dneve v tednu se najpogosteje dogajajo nesreče?
+- Ob katerih urah se zgodi največji delež nesreč?
+- Kakšna je verjetnost nastanka nesreče s poškodbo glede na vremenske okoliščine?
+- Kakšen je trend vožnje pod vplivom alkohola pri mlajših voznikih (populacija mlajša od 30)?
+- So nesreče zunaj mest resnejše?
+- So nesreče ponoči resnejše?
+- Analiza žarišč prometnih nesreč glede na koordinate
 
 ### 2. Podatki in čiščenje
 
