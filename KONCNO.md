@@ -39,7 +39,7 @@ Tukaj so povzete samo glavne ugotovitve analiz in pomembnejše slike. Dodatni gr
 
 Pogledali smo si porazdelitev po dnevih v tednu in po urah, kjer smo za risanje grafa uporabili deleže prometnih nesreč, namesto dejanskih pojavov nesreč. Tako smo pri nesrečah po dnevih v tednu stolpce izračunali kot *(Število nesreč na posamezen dan / vse nesreče)*. Podobno smo računali tudi pri analizi po urah.
 Prišli smo do večinoma pričakovanih rezultatov. Iz analize deležev nesreč glede na dan lahko razberemo, da se največ nesreč v podatkih pojavi ob petkih. Na splošno je med delavnikom več nesreč kot med vikendom, kjer so deleži veliko nižji. Kot pričakovano se največji delež nesreč zgodi popoldan med 15.00 in 16.00. 
-Pridobljena grafa analize po dnevih in po urah smno združili v enoten vpogled v podatke z toplotno karto.
+Pridobljena grafa analize po dnevih in po urah smno združili v enoten vpogled v podatke s toplotno karto.
 
 <img width="1621" height="690" alt="image" src="https://github.com/user-attachments/assets/60eec8c6-051c-4998-b0ba-c15997cb0d8a" />
 
@@ -72,7 +72,7 @@ Velja opomniti tudi, da tej podatki prikazujejo vse voznike, ki so na alkotestu 
 
 Želeli smo izdelati model, ki bi na podlagi nekaj zanimivih atributov lahko podal verjetnost za nastanek nesreče s hudimi telesnimi poškodbami. Prvi prototip modela smo realizirali s pomočjo algoritma Naivni Bayes, za vizualizacijo pa smo uporabili nomogram v programu Orange. 
 
-Rezultati so sicer izgledali obetavni, ampak nam način vizualizacije ni ustrezal, saj ne omogoča uporabnikom prijazne interakcije. Vizualizacijo in model smo preselili v streamlit kjer uporabnik lahko natančno določi vrednosti atributov, ki ga zanimajo. Aplikacija je dostopna na povezavi https://pr2615.streamlit.app/
+Rezultati so sicer izgledali obetavni, ampak nam način vizualizacije ni ustrezal, saj ne omogoča uporabnikom prijazne interakcije. Vizualizacijo in model smo preselili v streamlit, kjer uporabnik lahko natančno določi vrednosti atributov, ki ga zanimajo. Aplikacija je dostopna na povezavi https://pr2615.streamlit.app/
 
 #### 3.5 Model za identifikacijo žarišč
 
